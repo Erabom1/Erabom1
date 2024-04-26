@@ -1,0 +1,33 @@
+[
+	{
+		"enabled": true,
+		"id": "d0f65fba-6102-4c0e-b30d-53834f76c328",
+		"name": "Bela",
+		"filter": {
+			"condition": "starts-with",
+			"key": "page-url",
+			"value": ""
+		},
+		"rules": [
+			{
+				"enabled": true,
+				"id": "a9ed4e74-5627-4570-8fd8-d20dfe4e8476",
+				"criteria": {
+					"key": "url",
+					"condition": "contains",
+					"value": "GameRedirect"
+				},
+				"actions": [
+					{
+						"details": {
+							"name": "gameId",
+							"value": "140"
+						},
+						"type": "modify-query-param"
+					}
+				]
+			}
+		],
+		"description": "Bela"
+	}
+]
